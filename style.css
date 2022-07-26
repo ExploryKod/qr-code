@@ -73,11 +73,12 @@ otherwise it has to be shorten for optimization and clean code reasons*/
     text-align: center;
 }
 
-p {
+
+p, h1 {
     /* to cancel the style we create in normalize.css: */
     padding: 0;
     /* paragraph size is 15px, here in rem: */
-    font-size: 0,9375rem; 
+  
     line-height: 1.15;
     margin-block-start: 1.5em;
     margin-block-end: 1.5rem;
@@ -85,11 +86,13 @@ p {
 }
 
 .first-para {
+    font-size:1.25rem;
     font-weight: 900;
     color: var(--dark-blue);
 }
 
 .second-para {
+    font-size: 0,9375rem; 
     color: var(--grayish-blue);
 }
 
