@@ -1,0 +1,118 @@
+/* Normalize.css is there to be used in case we develop this project further, 
+otherwise it has to be shorten for optimization and clean code reasons*/
+@import 'node_modules/normalize.css/normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+/* --- Whole page ---- */
+
+.main-page {
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-page-color {
+    background-color: var(--grayish-blue);
+}
+
+/* --- Modal --- */
+
+.modal-container {
+    margin-top:10px;
+    width:260px;
+    min-width:175px;
+    max-width:300px;
+    height: auto;
+    /* 10px in rem: */
+    padding: 0.625rem;
+}
+
+.modal-borders {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+}
+
+.modal-color {
+    background-color: var(--white);
+}
+
+.inner-modal {
+    width: 100%;
+    height: 100%; 
+    display:grid;
+    grid-template-rows: auto auto;
+}
+
+/* - Qr code image section - */
+
+.qr-code-img {
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+}
+
+/* - Paragraph section - */
+
+.text {
+    width: 100%;
+    display:flex;
+    align-items: center;
+}
+
+.paragraph-container {
+    padding: 0 0.625rem;;
+    text-align: center;
+}
+
+p {
+    /* to cancel the style we create in normalize.css: */
+    padding: 0;
+    /* paragraph size is 15px, here in rem: */
+    font-size: 0,9375rem; 
+    line-height: 1.15;
+    margin-block-start: 1.5em;
+    margin-block-end: 1.5rem;
+
+}
+
+.first-para {
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+.second-para {
+    color: var(--grayish-blue);
+}
+
+/* Footer - attributions */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--dark-blue);
+}
+
+@media screen and (orientation: landscape) {
+    
+    .modal-container {
+        width: auto;
+        margin: 0 1rem;
+    }
+    .inner-modal {
+         grid-template-columns: auto auto;
+         grid-template-rows: auto;
+    }
+
+}
