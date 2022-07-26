@@ -21,7 +21,7 @@ otherwise it has to be shorten for optimization and clean code reasons*/
 }
 
 .main-page-color {
-    background-color: var(--grayish-blue);
+    background-color: var(--light-gray);
 }
 
 /* --- Modal --- */
