@@ -1,6 +1,4 @@
-/* Normalize.css is there to be used in case we develop this project further, 
-otherwise it has to be shorten for optimization and clean code reasons*/
-@import 'node_modules/normalize.css/normalize.css';
+@import 'base.css';
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
 :root {
@@ -14,7 +12,7 @@ otherwise it has to be shorten for optimization and clean code reasons*/
 
 .main-page {
     width: 100vw;
-    height:100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,10 +25,10 @@ otherwise it has to be shorten for optimization and clean code reasons*/
 /* --- Modal --- */
 
 .modal-container {
-    margin-top:10px;
-    width:260px;
-    min-width:175px;
-    max-width:300px;
+    margin-top: 10px;
+    width: 260px;
+    min-width: 175px;
+    max-width: 300px;
     height: auto;
     /* 10px in rem: */
     padding: 0.625rem;
@@ -47,16 +45,16 @@ otherwise it has to be shorten for optimization and clean code reasons*/
 
 .inner-modal {
     width: 100%;
-    height: 100%; 
-    display:grid;
+    height: 100%;
+    display: grid;
     grid-template-rows: auto auto;
 }
 
 /* - Qr code image section - */
 
 .qr-code-img {
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
 }
 
@@ -64,21 +62,23 @@ otherwise it has to be shorten for optimization and clean code reasons*/
 
 .text {
     width: 100%;
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
 .paragraph-container {
-    padding: 0 0.625rem;;
+    padding: 0 0.625rem;
+    ;
     text-align: center;
 }
 
 
-p, h1 {
+p,
+h1 {
     /* to cancel the style we create in normalize.css: */
     padding: 0;
     /* paragraph size is 15px, here in rem: */
-  
+
     line-height: 1.15;
     margin-block-start: 1.5em;
     margin-block-end: 1.5rem;
@@ -86,13 +86,13 @@ p, h1 {
 }
 
 .first-para {
-    font-size:1.25rem;
+    font-size: 1.25rem;
     font-weight: 900;
     color: var(--dark-blue);
 }
 
 .second-para {
-    font-size: 0,9375rem; 
+    font-size: 0, 9375rem;
     color: var(--grayish-blue);
 }
 
@@ -108,14 +108,15 @@ p, h1 {
 }
 
 @media screen and (orientation: landscape) and (max-width:476px) {
-    
+
     .modal-container {
         width: auto;
         margin: 0 1rem;
     }
+
     .inner-modal {
-         grid-template-columns: auto auto;
-         grid-template-rows: auto;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
     }
 
 }
